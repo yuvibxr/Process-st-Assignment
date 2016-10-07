@@ -1,0 +1,20 @@
+<div class="wistia-uploader-wrapper row">
+    <form class="form col-xs-12" id="fileupload" enctype="multipart/form-data" data-file-upload="options">
+
+        <button class="btn btn-primary fileinput-button">
+            <i class="glyphicon glyphicon-plus"></i>
+            <span>Upload Video</span>
+            <input type="file" name="file">
+        </button>
+    </form>
+
+    <div class="progress" id="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        </div>
+    </div>
+
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+    <div ng-if="!!videoPreviewUrl">
+        <div class="wistia_embed" ng-class="videoPreviewUrl" style="height:361px;width:640px">&nbsp;</div>
+    </div>
+</div>
